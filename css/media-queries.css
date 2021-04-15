@@ -4,7 +4,7 @@
     /*    padding: 0;*/
     /*}*/
 * {
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Kannada Sangam MN", sans-serif;
 }
     body {
         display: flex;
@@ -65,40 +65,72 @@
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width:351px) and (max-width: 920px) {
 
-    h1 {
-        display: inline-block;
-        margin-right: 15%;
-    }
     .alert-info {
         visibility: hidden;
     }
-
-nav {
-    display: inline-block;
-    margin-right: 10px;
-}
+    h1{
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        float: right;
+        margin: 0;
+        padding: 8px 0;
+    }
     nav, h1 {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
         display: inline-block;
-        border: 1px solid hotpink;
     }
 
     .nav-links {
-        display: inline-block;
-        margin-left: auto;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
     }
 
-li a {
-    display: flex;
-    flex-direction: row;
-
-}
     li {
         display: flex;
         list-style: none;
-        justify-content: space-evenly;
-        margin: auto;
     }
+
+    li a {
+        display: flex;
+        padding: 0 8px;
+        justify-content: space-evenly;
+    }
+    img{
+        display: flex;
+        justify-content: center;
+        margin-top: 5em;
+        margin-bottom: 1em;
+    }
+    .main, .sub-section{
+        font-family: Baskerville, sans-serif;
+    }
+    .main{
+        width: 60%;
+        float: left;
+        padding: 15px;
+    }
+    .sub-section{
+        width: 30%;
+        float: right;
+        padding: 15px;
+        font-style: italic;
+    }
+
+    footer p{
+        margin-top: 49%;
+        float: left;
+    }
+
 }
