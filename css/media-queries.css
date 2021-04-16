@@ -67,6 +67,7 @@
 
 @media screen and (min-width:351px) and (max-width: 920px) {
 
+
     .alert-info {
         visibility: hidden;
     }
@@ -117,20 +118,42 @@
         font-family: Baskerville, sans-serif;
     }
     .main{
-        width: 60%;
+        width: 50%;
         float: left;
         padding: 15px;
     }
     .sub-section{
+        margin-left: 10%;
         width: 30%;
-        float: right;
+        float: left;
         padding: 15px;
         font-style: italic;
     }
 
-    footer p{
-        margin-top: 49%;
-        float: left;
+    footer {
+        /*width: 100%;*/
+        display: flex;
+        flex-direction: row;
+        clear: both;
+        align-items: center;
     }
 
+    footer p{
+        /*margin-top: 49%;*/
+        /*float: left;*/
+        /*display: flex;*/
+        /*justify-content: flex-start;*/
+        /*!*align-items: flex-end;*!*/
+        /*!*height: 55vh;*!*/
+        /*width: 40%;*/
+        /*border: 1px solid red;*/
+    }
+
+    #social-media-links {
+        margin-left: auto;
+    }
+
+    div #social-media-links {
+
+    }
 }
